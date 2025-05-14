@@ -1,26 +1,16 @@
-# --- Go build artifacts ---
-*.exe
-*.test
-*.out
+# Binaries and executables
+main
+main.exe
 
-# --- Dependency directories ---
-/vendor/
-/bin/
-/tmp/
-.build/
-
-# --- Logs ---
+# Log files
 *.log
-build-errors.log
-air.log
 
-# --- Editor/IDE junk ---
-*.swp
-*.swo
-*.DS_Store
-.vscode/
-.idea/
+# Temporary directories
+tmp/
 
-# --- OS junk ---
-Thumbs.db
+# Air's temporary build directory
+tmp/**
+
+# OS-specific files
 .DS_Store
+Thumbs.db
