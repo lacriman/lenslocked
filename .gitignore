@@ -1,0 +1,26 @@
+# --- Go build artifacts ---
+*.exe
+*.test
+*.out
+
+# --- Dependency directories ---
+/vendor/
+/bin/
+/tmp/
+.build/
+
+# --- Logs ---
+*.log
+build-errors.log
+air.log
+
+# --- Editor/IDE junk ---
+*.swp
+*.swo
+*.DS_Store
+.vscode/
+.idea/
+
+# --- OS junk ---
+Thumbs.db
+.DS_Store
