@@ -2,12 +2,26 @@
 <p>Your number: {{.Number}}</p>
 <p>Your Email: {{.Email}}</p>
 
+<h2>Your Tasks:</h2>
+<ul>
+    {{range .Tasks}}
+        <li>{{.}}</li>
+    {{end}}
+</ul>
 
 <script> 
 const user = {
     "name": {{.Name}}
     "number": {{.Number}}
     "email": {{.Email}}
+    "tasks": {{.Tasks}}
 }
+
+function writeTasks(tasks) {
+    tasks.array.forEach(element => {
+        
+    });
+}
+
 console.log(user)
 </script>

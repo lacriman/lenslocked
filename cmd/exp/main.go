@@ -12,6 +12,7 @@ type User struct {
 	Name   string
 	Number string
 	Email  string
+	Tasks  []string
 }
 
 func executeTemplate(w http.ResponseWriter, filepath string, user interface{}) {
@@ -34,9 +35,10 @@ func executeTemplate(w http.ResponseWriter, filepath string, user interface{}) {
 
 func userHandler(w http.ResponseWriter, r *http.Request) {
 	user := User{
-		Name:   "John Smith",
+		Name:   "Yaroslav Proskurin",
 		Number: "0141224123",
 		Email:  "y.proskurin@rto.de",
+		Tasks:  []string{"buy milk", "read 30 pages", "wash clothes"},
 	}
 	executeTemplate(w, "user.gohtml", user)
 }
