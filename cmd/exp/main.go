@@ -43,6 +43,14 @@ func userHandler(w http.ResponseWriter, r *http.Request) {
 	executeTemplate(w, "user.gohtml", user)
 }
 
+// func makeCounter(base int, add int) func() int{
+// 	n := base
+// 	return func() int{
+// 		n += add
+// 		return n
+// 	}
+// }
+
 func main() {
 
 	r := chi.NewRouter()
