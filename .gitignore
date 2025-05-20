@@ -1,15 +1,13 @@
-# Binaries and executables
+# Go binaries (only needed if built into project root)
 main
 main.exe
 
-# Log files
+# Logs
 *.log
+build-errors.log  # specifically from air, in case others are excluded later
 
-# Temporary directories
+# Air's build output
 tmp/
-
-# Air's temporary build directory
-tmp/**
 
 # OS-specific files
 .DS_Store
